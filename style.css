@@ -4,6 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* assets */
+:root{
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #B4D0E7;
+    --bg-tertiary: #000000;
+    --cl_txt-primary: #000000;
+    --cl_txt-secondary: #FFFFFF;
+    --cl_txt-tertiary: #61082B;
+    --bg_prtn-lonelyplanet: #0D2481;
+    --bg_prtn-hearst: #B4D0E7;
+    --bg_prtn-clearchannel: #FFD830;
+    --bg_prtn-worldbicycle: #D5001F;
+    --bg_prtn-topps: #FF1C1C;
+    --bg_prtn-ASU: #61082B;
+    --bg_prtn-UFflorida: #0093CE;
+    --bg_prtn-Designit: #A2D39B;
+    --bg_prtn-Designit_lg: #F5F5F5;
+}
 
 /* #region debug */
 .debug{
