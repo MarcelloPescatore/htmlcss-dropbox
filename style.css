@@ -12,6 +12,57 @@ body{
 .button_primary{
     background-color: var(--cl_btn-primary);
     padding: 0.5rem 1rem;
+
+    a{
+        text-decoration: none;
+        color: var(--cl_txt-secondary);
+    }
+}
+
+.button_secondary{
+    background-color: var(--cl_btn-secondary);
+    padding: 0.5rem 1rem;
+
+    a{
+        text-decoration: none;
+        color: var(--cl_txt-tertiary-);
+    }
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.column{
+    padding: 0 0.5rem;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.icon{
+    color: var(--cl-icon);
+    font-size: 2.5rem;
+}
+
+h1{
+    font-size: 4rem;
+    padding-bottom: 1rem;
 }
 /* assets */
 :root{
@@ -96,10 +147,6 @@ body{
 
     .start{
         margin-left: 1rem;
-        a{
-            text-decoration: none;
-            color: var(--cl_txt-secondary);
-        }
     }
 
 }
@@ -111,3 +158,9 @@ li:hover{
 
 
 /* #endregion header */
+
+/* #region main */
+
+/* hero */
+
+/* #endregion main*/
