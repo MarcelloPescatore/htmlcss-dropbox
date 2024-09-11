@@ -33,6 +33,18 @@ body{
     }
 }
 
+.button_quaternary{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+        color: var(--cl_txt-primary);
+    }
+}
+
 .container{
     width: 60%;
     margin: auto;
@@ -63,6 +75,22 @@ body{
     width: 70%;
 }
 
+.w-35{
+    width: 35%;
+}
+
+.w-65{
+    width: 65%;
+}
+
+.ptop-4{
+    padding-top: 4rem;
+}
+
+.py-2{
+    padding: 2rem 0;
+}
+
 .py-10{
     padding: 10rem 0;
 }
@@ -73,6 +101,10 @@ body{
 
 .pr-025{
     padding-right: 0.25rem;
+}
+
+.pr-1{
+    padding-right: 2rem;
 }
 
 img{
