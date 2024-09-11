@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 body{
@@ -43,26 +44,43 @@ body{
     padding: 0 0.5rem;
 }
 
-.w-30{
-    width: 30%;
+.w-35{
+    width: 35%;
 }
 
-.w-70{
-    width: 70%;
+.w-65{
+    width: 65%;
 }
 
 img{
     max-width: 100%;
 }
 
-.icon{
-    color: var(--cl-icon);
-    font-size: 2.5rem;
-}
-
 h1{
     font-size: 4rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: light;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.flex_c{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.flex_end{
+    display: flex;
+    justify-content: flex-end;
 }
 /* assets */
 :root{
@@ -162,5 +180,20 @@ li:hover{
 /* #region main */
 
 /* hero */
+#app_main>.hero{
+    padding-top: 2rem;
+    background-color: var(--bg-secondary);
+}
+
+.my-4{
+    margin-bottom: -4rem;
+}
+
+.icon{
+    position: relative;
+    color: var(--cl-icon);
+    font-size: 2rem;
+    font-weight: bolder;
+}
 
 /* #endregion main*/
