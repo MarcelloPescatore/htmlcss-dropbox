@@ -290,8 +290,17 @@ nav li:hover{
                 margin-bottom: 1.5rem;
             }
 
+            .my-05{
+                margin-top: 4.1rem;
+            }
+
             h4{
                 padding: 5rem 0 1rem 0 ;
+            }
+
+            .border_bottom_shrt{
+                padding-bottom: 2.5rem;
+                border-bottom: 1px solid lightgray;
             }
         }
 
