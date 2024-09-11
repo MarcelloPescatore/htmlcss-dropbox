@@ -187,29 +187,32 @@ li:hover{
 
 /* #region main */
 
-/* hero */
-#app_main>.hero{
-    padding-top: 2rem;
-    background-color: var(--bg-secondary);
-}
+    /* #region hero */
+    #app_main>.hero{
+        padding-top: 2rem;
+        background-color: var(--bg-secondary);
+    }
 
-.container_hero{
-    width: 70%;
-    margin: auto;
-}
+    .container_hero{
+        width: 70%;
+        margin: auto;
+    }
 
-.my-4{
-    margin-bottom: -4.5rem;
-}
+    .my-4{
+        margin-bottom: -4.5rem;
+    }
 
-.icon{
-    position: relative;
-    bottom: -3rem;
-    color: var(--cl-icon);
-    font-size: 2rem;
-    font-weight: bolder;
-}
+    .icon{
+        position: relative;
+        bottom: -3rem;
+        color: var(--cl-icon);
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    /* #endregion hero */
 
-/* plans */
+    /* #region plans */
+    
+    /* #endregion plans */
 
 /* #endregion main*/
