@@ -4,6 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    min-width: 1440px;
+}
+
+.button_primary{
+    background-color: var(--cl_btn-primary);
+    padding: 0.5rem 1rem;
+}
 /* assets */
 :root{
     --bg-primary: #FFFFFF;
@@ -21,6 +30,9 @@
     --bg_prtn-UFflorida: #0093CE;
     --bg_prtn-Designit: #A2D39B;
     --bg_prtn-Designit_lg: #F5F5F5;
+    --cl_btn-secondary: #FFFFFF;
+    --cl_btn-primary: #0061FF;
+    --cl-icon: #000000;
 }
 
 /* #region debug */
@@ -30,3 +42,72 @@
 /* #endregion debug */
 
 /* #endregion common */
+
+/* #region header */
+#app_header{
+    max-width:100%;
+    background-color: var(--bg-primary);
+
+    .row{
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+#left_menu,#right_menu{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 50%;
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+
+        li{
+            padding: 0.5rem 0;
+        }
+
+        li>a{
+            text-decoration: none;
+            color: var(--cl_txt-primary);
+            padding: 0 0.5rem;
+        }
+    }
+}
+
+#left_menu{
+    justify-content: flex-start;
+    padding-left: 1rem;
+
+    #logo{
+        margin-right: 1rem;
+    }
+}
+
+#right_menu{
+    justify-content: flex-end;
+    padding-right: 1rem;
+
+    .start{
+        margin-left: 1rem;
+        a{
+            text-decoration: none;
+            color: var(--cl_txt-secondary);
+        }
+    }
+
+}
+
+/* hover nav */
+li:hover{
+    border-bottom: 1px solid #00000081;
+}
+
+
+/* #endregion header */
