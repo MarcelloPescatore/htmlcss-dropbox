@@ -14,6 +14,7 @@ body{
     background-color: var(--cl_btn-primary);
     padding: 0.5rem 1rem;
     text-align: center;
+    vertical-align: middle;
 
     a{
         text-decoration: none;
@@ -39,11 +40,15 @@ body{
 
 .row{
     display: flex;
+}
+
+.row_fix{
     margin: 0 -0.5rem;
 }
 
-.column{
+.column_fix{
     padding: 0 0.5rem;
+    gap: 1rem;
 }
 
 .col-4{
@@ -58,8 +63,16 @@ body{
     width: 70%;
 }
 
-.ptop-10{
-    padding-top: 10rem;
+.py-10{
+    padding: 10rem 0;
+}
+
+.px-1{
+    padding: 0 1rem;
+}
+
+.pr-025{
+    padding-right: 0.25rem;
 }
 
 img{
@@ -68,29 +81,48 @@ img{
 
 h1{
     font-size: 4rem;
+    font-weight: bolder;
     padding-bottom: 1.5rem;
 }
 
-p{
-    font-size: 1rem;
-    font-weight: light;
+h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 1.5rem;
+}
+
+h3{
+    font-size: 1.75rem;
+    font-weight: bolder;
 }
 
 h4{
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+p, span{
+    font-size: 0.9rem;
+    font-weight: light;
 }
 
 .flex_c{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
 }
 
 .flex_end{
     display: flex;
     justify-content: flex-end;
+}
+
+.border{
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.border_bottom{
+    border-bottom: 1px solid rgb(180, 180, 180);
 }
 /* assets */
 :root{
@@ -113,12 +145,6 @@ h4{
     --cl_btn-primary: #0061FF;
     --cl-icon: #000000;
 }
-
-/* #region debug */
-.debug{
-    border: 1px dashed black;
-}
-/* #endregion debug */
 
 /* #endregion common */
 
@@ -180,7 +206,7 @@ h4{
 }
 
 /* hover nav */
-li:hover{
+nav li:hover{
     border-bottom: 1px solid #00000081;
 }
 
@@ -214,7 +240,100 @@ li:hover{
     /* #endregion hero */
 
     /* #region plans */
+        
+    
+        .radio{
+            display: flex;
+            gap: 2rem;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1.5rem 0 2rem 0;
+        }
 
+        .plans .row{
+            gap: 1rem;
+        }
+
+        .plan_name{
+            text-align: center;
+            padding: 1rem;
+
+            i{
+                padding-right: 0.5rem ;
+            }
+        }
+
+        .information{
+            h3{
+                padding: 2rem 0 0.5rem 0;
+            }
+
+            .price_fee{
+                font-weight: bold;
+                padding: 0 0 0.5rem 0;
+            }
+
+            .period_fee{
+                font-size: 0.8rem;
+                font-weight: 200;
+                color: gray;
+                padding-bottom: 3rem;
+            }
+            .users, .space, .function{
+                padding: 0.5rem 0;
+                display: flex;
+                gap: 0.25rem
+            }
+
+            .button_primary{
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
+            }
+
+            h4{
+                padding: 5rem 0 1rem 0 ;
+            }
+        }
+
+        .list{
+            padding-bottom: 3rem;
+
+            ul{
+                list-style: none;
+                margin-left: 1.5rem;
+            }
+
+            li{
+                padding-bottom: .5rem;
+                i{
+                    font-size: 1rem;
+                    font-weight: bolder;
+                    padding-right: 0.5rem;
+                    margin-left: -1.5rem;
+                    color: var(--cl_btn-primary);
+                }
+            }
+
+        }
+
+
+        .personal_plan{
+            margin-top: 3rem;
+
+            .row{
+                padding: 1.5rem 1rem;
+
+                .column{
+                    h3{
+                        padding-bottom: 1rem;
+                    }
+                    h4{
+                        padding-bottom: 3rem;
+                    }
+                }
+                    
+            }
+        }
     /* #endregion plans */
 
 /* #endregion main*/
