@@ -177,6 +177,12 @@ span {
 .border_bottom {
   border-bottom: 1px solid rgb(180, 180, 180);
 }
+
+.border_bottom_acc {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
 /* assets */
 :root {
   --bg-primary: #ffffff;
@@ -402,7 +408,6 @@ nav li:hover {
 /* #endregion operations */
 
 /* #region company_partners */
-
 .col-4 > .row {
   display: flex;
   justify-content: center;
@@ -521,5 +526,42 @@ nav li:hover {
 }
 
 /* #endregion company_parteners */
+
+/* #region faq */
+  .row_question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+    i{
+      font-weight: bolder;
+      color: var(--cl_txt-primary);
+      padding-right: 1rem;
+    }
+  }
+
+  .row_answer{
+    p{
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  /* hover */
+  .fa-chevron-up, .row_answer{
+    display: none;
+  }
+
+  .accordion:hover{
+    .fa-chevron-up, .row_answer{
+      display: inline-block;
+    }
+    .fa-chevron-down{
+      display: none;
+    }
+  }
+
+/* #endregion accordion */
 
 /* #endregion main*/
