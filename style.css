@@ -305,7 +305,7 @@ nav li:hover {
 
 .icon {
   position: relative;
-  bottom: -4.5rem;
+  bottom: -3rem;
   color: var(--cl-icon);
   font-size: 2rem;
   font-weight: bolder;
