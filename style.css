@@ -74,7 +74,7 @@ img {
   }
 }
 
-.button_quaternary {
+.button_tertiary {
   background-color: white;
   padding: 0.5rem 1rem;
   border: 1px solid black;
@@ -240,13 +240,11 @@ span {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.5rem 0;
-    margin-bottom: 0.5rem;
+
   }
 }
 
-#left_menu,
-#right_menu {
+#left_menu, #right_menu {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -254,9 +252,10 @@ span {
   nav ul {
     display: flex;
     list-style: none;
+    
 
     li {
-      padding: 0.5rem 0;
+      padding: 2rem 0;
     }
 
     li > a {
@@ -269,10 +268,15 @@ span {
 
 #left_menu {
   justify-content: flex-start;
+  align-items: center;
   padding-left: 1rem;
 
   #logo {
     margin-right: 1rem;
+
+    img{
+      padding: 1.5rem 0;
+    }
   }
 }
 
@@ -283,11 +287,6 @@ span {
   .start {
     margin-left: 1rem;
   }
-}
-
-/* hover nav */
-nav li:hover {
-  border-bottom: 1px solid #00000081;
 }
 
 /* #endregion header */
@@ -569,20 +568,6 @@ nav li:hover {
     }
   }
 
-  /* hover */
-  .hov, .row_answer{
-    display: none;
-  }
-
-  .accordion:hover{
-    .fa-chevron-up, .row_answer{
-      display: inline-block;
-    }
-    .fa-chevron-down{
-      display: none;
-    }
-  }
-
 /* #endregion accordion */
 
 /* #endregion main*/
@@ -633,3 +618,38 @@ nav li:hover {
     }
   }
 /* #endregion footer */
+
+/* #region bonus */
+
+  /* hover accordion */
+  .hov, .row_answer{
+    display: none;
+  }
+
+  .accordion:hover{
+    .fa-chevron-up, .row_answer{
+      display: inline-block;
+    }
+    .fa-chevron-down{
+      display: none;
+    }
+  }
+
+  /* hover nav */
+  nav li:hover {
+  border-bottom: 2px solid #000000;
+  }
+
+  /* button bonus */
+  .button_primary:hover , .button_secondary:hover{
+    filter: brightness(1.1);
+  }
+
+  .button_tertiary:hover{
+    background-color: var(--bg-tertiary);
+    border: none;
+    a{
+      color: var(--cl_txt-secondary);
+    }
+  }
+/* #endregion bonus */
