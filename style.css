@@ -10,6 +10,47 @@ body {
   min-width: 1440px;
 }
 
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.container_70 {
+  width: 70%;
+  margin: auto;
+}
+
+.row_fix {
+  margin: 0 -0.5rem;
+}
+
+.column_fix {
+  padding: 0 0.5rem;
+  gap: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* #region flex */
+.flex_c {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex_end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.row {
+  display: flex;
+}
+/* #endregion flex */
+
+/* #region button */
 .button_primary {
   background-color: var(--cl_btn-primary);
   padding: 0.5rem 1rem;
@@ -44,25 +85,9 @@ body {
     color: var(--cl_txt-primary);
   }
 }
+/* #endregion button */
 
-.container {
-  width: 60%;
-  margin: auto;
-}
-
-.row {
-  display: flex;
-}
-
-.row_fix {
-  margin: 0 -0.5rem;
-}
-
-.column_fix {
-  padding: 0 0.5rem;
-  gap: 1rem;
-}
-
+/* #region width col */
 .col-3 {
   width: calc((100% / 12) * 3);
 }
@@ -87,6 +112,12 @@ body {
   width: calc((100% / 12) * 12);
 }
 
+.w-5{
+  width: calc(100%/5);
+}
+/* #endregion width col */
+
+/* #region padding */
 .ptop-4 {
   padding-top: 4rem;
 }
@@ -126,11 +157,9 @@ body {
 .pr-1 {
   padding-right: 2rem;
 }
+/* #endregion padding */
 
-img {
-  max-width: 100%;
-}
-
+/* #region txt size */
 h1 {
   font-size: 4rem;
   font-weight: bolder;
@@ -158,18 +187,9 @@ span {
   font-size: 0.9rem;
   font-weight: light;
 }
+/* #endregion txt size */
 
-.flex_c {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.flex_end {
-  display: flex;
-  justify-content: flex-end;
-}
-
+/* #region border */
 .border {
   border: 1px solid rgb(180, 180, 180);
 }
@@ -181,9 +201,9 @@ span {
 .border_bottom_acc {
   border-bottom: 1px solid rgb(0, 0, 0);
 }
+/* #endregion border */
 
-
-/* assets */
+/* #region root color */
 :root {
   --bg-primary: #ffffff;
   --bg-secondary: #b4d0e7;
@@ -204,6 +224,7 @@ span {
   --cl_btn-primary: #0061ff;
   --cl-icon: #000000;
 }
+/* #endregion root color */
 
 /* #endregion common */
 
@@ -276,11 +297,6 @@ nav li:hover {
 #app_main > .hero {
   padding-top: 2rem;
   background-color: var(--bg-secondary);
-}
-
-.container_hero {
-  width: 70%;
-  margin: auto;
 }
 
 .my-4 {
@@ -549,7 +565,7 @@ nav li:hover {
   }
 
   /* hover */
-  .fa-chevron-up, .row_answer{
+  .hov, .row_answer{
     display: none;
   }
 
@@ -565,3 +581,50 @@ nav li:hover {
 /* #endregion accordion */
 
 /* #endregion main*/
+
+/* #region footer */
+  #app_footer{
+    background-color: var(--bg-tertiary);
+  }
+
+  .container_70>.row{
+    gap: 1rem;
+
+    #language{
+      color: var(--cl_txt-secondary);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.385);
+
+      .fa-chevron-up{
+        font-size: 0.5rem;
+      }
+    } 
+  }
+
+  .title{
+    padding-top: 5rem;
+    color: var(--cl_txt-secondary);
+  }
+
+  .list_footer{
+    padding: 1rem 0;
+    ul{
+      list-style: none;
+
+      li{
+        padding: 0.25rem 0;
+      }
+
+      li>a{
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--cl_txt-secondary);
+        text-decoration: none;
+      }
+    }
+  }
+/* #endregion footer */
