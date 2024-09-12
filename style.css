@@ -219,6 +219,7 @@ span {
   --bg_prtn-ASU: #61082b;
   --bg_prtn-UFflorida: #0093ce;
   --bg_prtn-Designit: #a2d39b;
+  --bg_prtn-lh_Designit: #D1E9CD;
   --bg_prtn-Designit_lg: #f5f5f5;
   --cl_btn-secondary: #ffffff;
   --cl_btn-primary: #0061ff;
@@ -431,7 +432,11 @@ nav li:hover {
   vertical-align: middle;
 
   .col-6 {
-    padding: 1rem;
+    padding: 0.75rem;
+  }
+
+  .light_des{
+    background-color: var(--bg_prtn-lh_Designit);
   }
 
   img {
