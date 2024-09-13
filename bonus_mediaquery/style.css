@@ -671,7 +671,7 @@ span {
       z-index: 1000;
   }
 
-  #app_header_mobile{
+  .box_shadow{
       box-shadow: 0px 15px 51px -23px #616161;
   }
 
@@ -710,11 +710,13 @@ span {
       left: 0;
       top: 3.7rem;
       background-color: var(--bg-primary);
-      padding: 1rem 2rem;
+      padding: 0rem 2rem;
       width: 100%;
     
       ul{
         list-style: none;
+        padding: 1rem 0;
+        border-top: 1px solid var(--cl_btn-primary);
 
         li{
           padding-bottom: 0.5rem;
@@ -723,10 +725,15 @@ span {
         li>a{
           text-decoration: none;
           color: var(--cl_txt-primary);
-          font-size: 1rem;
+          font-weight: 500;
+        }
+
+        a:hover{
+          color: var(--cl_btn-primary);
         }
       }
   }
+
 }
 
 /* #endregion mobile */
