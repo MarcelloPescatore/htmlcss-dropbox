@@ -230,6 +230,10 @@ span {
 /* #endregion common */
 
 /* #region header */
+#app_header_mobile{
+  display: none;
+}
+
 #app_header {
   max-width: 100%;
   background-color: var(--bg-primary);
@@ -663,30 +667,56 @@ span {
 /* #region mobile */
 @media screen and (max-width: 576px){
   #app_main , #app_footer{
-      display: none;
+    /* display: none; */
   }
 
+/* #region txt size mobile*/
+h1{
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+p,
+span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+/* #endregion txt size mobile*/
+
+/* #region header */
   #app_header{
-      display: none;
-      z-index: 1000;
+    display: none;
+  }
+
+  #app_header_mobile{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-primary);
   }
 
   .box_shadow{
       box-shadow: 0px 15px 51px -23px #616161;
   }
 
-  p{
-      font-size: 16px;
-      font-weight: 400;
-  }
-
-  h1{
-      font-size: 36px;
-      font-weight: 800;
-  }
-
   #app_header_mobile>.row{
       display: flex;
+      width: 100%;
       justify-content: space-between;
       align-items: center;
       padding: 1rem;
@@ -733,8 +763,43 @@ span {
         }
       }
   }
+/* #endregion header */
 
+/* #region main */
+  #app_main > .hero {
+    padding: 1rem 0;
+    background-color: var(--bg-secondary);
+  }
+  .container_90{
+    width: 90%;
+  }
+
+  .col-12_sm{
+    width: calc((100%/12)*12);
+  }
+
+  .hero_mobile{
+    display: none;
+  }
+
+  .icon{
+    position: static;
+  }
+
+  .align-self-end{
+    align-self: flex-end;
+  }
+
+  .align-self-center{
+    align-self: center;
+  }
+
+  .py-3{
+    padding: 3rem 0;
+  }
 }
+
+/* #endregion main */
 
 /* #endregion mobile */
 
