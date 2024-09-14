@@ -859,6 +859,41 @@ span {
     margin-top: 1rem;
   }
 
+/* partner */
+
+.partner_mobile{
+  .pr-1{
+    display: none;
+  }
+
+  .bg_img{
+
+    background-image: url(./img/partner.png);
+    background-size: cover;
+    height: 250px;
+    .py-2{
+      padding: 1rem 0;
+    }
+  }
+
+  .content{
+    height: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.396);
+  }
+
+ 
+
+  .ptop-4{
+    padding-top: 0rem;
+  }
+}
+
+.pbottom-10{
+  padding-bottom: 4rem;
+}
+
+
 
 /* #endregion main */
 
