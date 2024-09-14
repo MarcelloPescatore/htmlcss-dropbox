@@ -666,9 +666,7 @@ span {
 
 /* #region mobile */
 @media screen and (max-width: 576px){
-  #app_main , #app_footer{
-    /* display: none; */
-  }
+  
 
 /* #region txt size mobile*/
 h1{
@@ -679,6 +677,7 @@ h1{
 h2 {
   font-size: 1.5rem;
   font-weight: 800;
+  padding-bottom: 0rem;
 }
 
 h3 {
@@ -687,7 +686,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -778,6 +777,10 @@ span {
     width: calc((100%/12)*12);
   }
 
+  .wrap{
+    flex-wrap: wrap;
+  }
+
   .hero_mobile{
     display: none;
   }
@@ -797,9 +800,71 @@ span {
   .py-3{
     padding: 3rem 0;
   }
-}
+
+/* plans */
+  #radio_a{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .plan_name{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .information{
+
+    .period_fee{
+      padding-bottom: 1rem;
+    }
+
+    .button_primary{
+      margin-top: 2rem;
+    }
+
+  }
+
+  .personal_plan{
+    .row{
+      flex-direction: column;
+      .column{
+        h4{
+          padding-bottom: 2rem;
+        }
+
+        h3{
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+  
+  .information, .fa-chevron-up, .unhover{
+    display: none;
+  }
+
+
+  .hover:hover .information,.hover:hover .fa-chevron-up, .hover:hover .unhover{
+    display: inline-flex;
+  }
+
+  .hover:hover .fa-chevron-down{
+    display: none;
+  }
+
+  .personal_plan{
+    margin-top: 1rem;
+  }
+
 
 /* #endregion main */
+
+}
+
+
 
 /* #endregion mobile */
 
