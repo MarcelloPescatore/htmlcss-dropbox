@@ -946,6 +946,35 @@ span {
     }
   }
 }
+/* footer */
+#app_footer{
+  .menu{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &>div{
+      width: 47%;
+    }
+
+    .title{
+      padding-top: 1rem;
+    }
+
+    /* div:first-child .title{
+      padding-top: 2rem;
+    } */
+
+    .list_footer{
+      display: none;
+    }
+
+    .hover:hover .list_footer {
+      display: inline-block;
+    }
+  }
+}
+
+
 /* #endregion main */
 
 }
